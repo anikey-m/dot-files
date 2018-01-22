@@ -1,0 +1,69 @@
+[
+	{ "keys": ["ctrl+h"], "command": "left_delete" },
+	{ "keys": ["ctrl+shift+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+	{ "keys": ["ctrl+["], "command": "single_selection", "context":
+		[
+			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "clear_fields", "context":
+		[
+			{ "key": "has_next_field", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "clear_fields", "context":
+		[
+			{ "key": "has_prev_field", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "hide_panel", "args": {"cancel": true},
+		"context":
+		[
+			{ "key": "panel_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "hide_overlay", "context":
+		[
+			{ "key": "overlay_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "hide_popup", "context":
+		[
+			{ "key": "popup_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+
+	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+		"context":
+		[
+			{ "key": "panel_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+		"context":
+		[
+			{ "key": "overlay_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+		"context":
+		[
+			{ "key": "popup_visible", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+		"context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+	{ "keys": ["ctrl+t"], "command": "toggle_setting", "args": {"setting": "vintage_lines.force_mode"} },
+	{ "keys": ["ctrl+shift+t"], "command": "toggle_setting", "args": {"setting": "line_numbers"} },
+]

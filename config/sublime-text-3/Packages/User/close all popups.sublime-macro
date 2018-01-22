@@ -1,0 +1,7 @@
+[
+	{ "command": "hide_panel", "args": { "cancel": true } },
+	{ "command": "hide_overlay" },
+	{ "command": "hide_popup" },
+	{ "command": "hide_auto_complete" },
+	{ "command": "exit_insert_mode" },
+]
