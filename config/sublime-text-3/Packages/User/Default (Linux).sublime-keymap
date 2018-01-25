@@ -1,6 +1,8 @@
 [
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
 	{ "keys": ["ctrl+h"], "command": "left_delete" },
 	{ "keys": ["ctrl+shift+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+	{ "keys": ["ctrl+alt+["], "command": "unindent" }
 	{ "keys": ["ctrl+["], "command": "single_selection", "context":
 		[
 			{ "key": "num_selections", "operator": "not_equal", "operand": 1 }
@@ -39,25 +41,25 @@
 	},
 
 
-	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+	{ "keys": ["ctrl+alt+["], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
 		"context":
 		[
 			{ "key": "panel_visible", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+	{ "keys": ["ctrl+alt+["], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
 		"context":
 		[
 			{ "key": "overlay_visible", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+	{ "keys": ["ctrl+alt+["], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
 		"context":
 		[
 			{ "key": "popup_visible", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["ctrl+]"], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
+	{ "keys": ["ctrl+alt+["], "command": "run_macro_file", "args": {"file": "res://Packages/User/close all popups.sublime-macro"},
 		"context":
 		[
 			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
