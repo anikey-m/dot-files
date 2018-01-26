@@ -1,2 +1,31 @@
 [
+	{ "keys": ["ctrl+h"], "command": "left_delete" },
+	{ "keys": ["ctrl+shift+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+	{ "keys": [">"], "command": "set_action", "args": {"action": "indent"},
+		"context": [
+			{ "key": "setting.command_mode" },
+			{ "key": "num_selections", "operand": 1},
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false }
+		]
+	},
+	{ "keys": ["<"], "command": "set_action", "args": {"action": "unindent"},
+		"context": [
+			{ "key": "setting.command_mode" },
+			{ "key": "num_selections", "operand": 1},
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false }
+		]
+	},
+	{ "keys": ["u"], "command": "undo",
+		"context":
+		[
+			{"key": "setting.command_mode"},
+			{"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+		]
+	},
+	{ "keys": ["ctrl+["], "command": "single_selection",
+		"context": [
+			{ "key": "setting.command_mode" },
+			{ "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false }
+		]
+	},
 ]
